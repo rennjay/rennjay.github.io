@@ -9,14 +9,15 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/22b38c0a2e.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>renn-dev</title>
 </head>
 
-<body>
-    <header class="v-header container">
+<body data-spy="scroll" data-target="#mainNav">
+    <header class="v-header container" id="theHome">
         <div class="nav-div">
-            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-between">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex fixed-top justify-content-between py-0" id="mainNav">
                 <a class="navbar-brand" href="#">renn-dev</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -26,96 +27,86 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#theHome">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#theService">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#thePorfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#theAbout">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#theContact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
         <div class="fullscreen-video-wrap">
-            <video src="src/Codes - 23355.mp4" autoplay="true" loop="true"></video>
+            <video src="src/Typing_dark_03_Videvo.mp4" autoplay="true" loop="true"></video>
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
-            <h1>Your solution in innovative digital transformation</h1>
-            <p>We are at the forefront of Digital IT Solutions in the Philippines. Find out why and how we can
-                provide you value.</p>
-            <a href="#" class="btn btn-secondary btn-lg bg-orange">Learn More</a>
-            <div class="badges d-flex justify-content-around mt-3">
-                <h2><span class="badge badge-secondary px-3 py-1">Laravel</span></h1>
-                    <h2><span class="badge badge-secondary px-3 py-1">ReactJS</span></h2>
-                    <h2><span class="badge badge-secondary px-3 py-1">Wordpress</span></h2>
-                    <h2><span class="badge badge-secondary px-3 py-1">PHP</span></h2>
-                    <h2><span class="badge badge-secondary px-3 py-1">HTML5</span></h2>
-                    <h2><span class="badge badge-secondary px-3 py-1">CSS3</span></h2>
-                    <h2><span class="badge badge-secondary px-3 py-1">Javascript</span></h2>
-            </div>
+            <h1>Digitizing <span class="typer text-white" id="main" data-words="ideas,passion,innovations"
+                    data-delay="100" data-deleteDelay="1000"></span>
+                <span class="cursor" data-owner="main"></span></h1>
+            <p class="lead">We are a team of professional software engineers with a passion to create.</p>
+            <a href="#theContact" class="btn btn-secondary btn-lg bg-orange px-5">Let's talk</a>
         </div>
     </header>
-    <section class="services text-center">
+    <section class="services text-center" id="theService">
         .<div class="container">
 
             <h1 class="text-orange font-weight-bold">Services</h1>
-            <p class="lead">As a key player in the IT industry, we have proven that our services work and sell. With
-                that,
-                we have expanded our horizon in order to meet the needs and demands of our clients.
+            <p class="lead">We will never cease to foster new technology to deliver quality
+                and exceed client's expectation.
             </p>
             <div class="services-cards d-flex justify-content-center flex-wrap">
-                <div class="card mt-4 mr-4 p-3" style="width: 22rem;">
+                <div class="card mt-4 mr-4 p-3" style="width: 22rem;" data-aos="zoom-out-right" data-aos-duration="900">
                     <i class="fab fa-wordpress fa-7x text-orange mb-2"></i>
                     <div class="card-title mb-0">
                         <h3>Worpress Development</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text text-justify">We create custom wordpress theme so that your brand will
+                            standout
+                            out of
+                            it's uniqueness and quality. We can also maintain and deploy your existing wordpress theme.
+                        </p>
                     </div>
                 </div>
-                <div class="card mt-4 mr-4 p-3" style="width: 22rem;">
+                <div class="card mt-4 mr-4 p-3" style="width: 22rem;" data-aos="zoom-out-left" data-aos-duration="900">
                     <i class="fas fa-laptop-code fa-7x text-orange mb-2"></i>
                     <div class="card-title mb-0">
                         <h3>Web App Development</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text text-justify">We create web application e.g. facebook and gmail to digitize
+                            your business
+                            process & operations and also to promote brand.</i></p>
                     </div>
                 </div>
-                <div class="card mt-4 mr-4 p-3" style="width: 22rem;">
+                <div class="card mt-4 mr-4 p-3" style="width: 22rem;" data-aos="zoom-out-right" data-aos-duration="900">
                     <i class="fas fa-mobile-alt fa-7x text-orange mb-2"></i>
                     <div class="card-title mb-0">
                         <h3>Mobile App Development</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">We can create mobile application that will run on all mobile devices.</p>
                     </div>
                 </div>
-                <div class="card mt-4 mr-4 p-3" style="width: 22rem;">
+                <div class="card mt-4 mr-4 p-3" style="width: 22rem;" data-aos="zoom-out-left" data-aos-duration="900">
                     <i class="fas fa-server fa-7x text-orange mb-2"></i>
                     <div class="card-title mb-0">
                         <h3>IT Services</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">We can provide any IT related services like website management, security,
+                            seo and graphics</p>
                     </div>
                 </div>
             </div>
@@ -123,7 +114,7 @@
     </section>
     <section class="whychooseus text-center">
         <h1 class="text-white font-weight-bold">What to expect</h1>
-        <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, rem?</p>
+        <p class="lead text-white">We value time and ideas. We value innovations. We value Quality.</p>
         <div class="carousel-div">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -133,24 +124,24 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100 mx-auto rounded" src="/src/50343.jpg" alt="Second slide">
-                        <div class="carousel-caption d-md-block">
-                            <h2>Responsive</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 mx-auto rounded" src="/src/50343.jpg" alt="Second slide">
-                        <div class="carousel-caption d-md-block">
-                            <h2>Responsive</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 mx-auto rounded" src="/src/47596.jpg" alt="Third slide">
+                        <img class="d-block w-100 mx-auto rounded" src="/src/rocket400.jpg" alt="Third slide">
                         <div class="carousel-caption d-md-block">
                             <h2>Scalable</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>We deliver solutions that progresses and expandable features.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 mx-auto rounded" src="/src/cost-eff600.jpg" alt="Second slide">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Cost Efficient</h2>
+                            <p>We maintain balance between quality and budget</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 mx-auto rounded" src="/src/responsive600.jpg" alt="Second slide">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Responsive</h2>
+                            <p>We ensure all products will run on all screen sizes especially mobile devices.</p>
                         </div>
                     </div>
                 </div>
@@ -165,35 +156,39 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="thePorfolio">
         <div class="container">
-            <h1 class="text-orange font-weight-bold">My Work</h1>
+            <h1 class="text-orange font-weight-bold">Creations</h1>
             <div class="portfolio-body d-flex justify-content-between flex-wrap align-items-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="900">
                     <img class="card-img-top" src="/src/sample-portfolio.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary bg-orange">Go somewhere</a>
+                        <h5 class="card-title font-weight-bold">Online application for police clearance</h5>
+                        <p class="card-text text-justify">This application was created to serve a police station in
+                            issuing police
+                            clearance and the applicant to apply for it with limited effort. It was create using PHP,
+                            Laravel, Bootstrap, HTML5,
+                            CSS3 and Javascript.
+                        </p>
+                        <a href="#" class="btn btn-primary bg-orange">Learn more</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1200">
                     <img class="card-img-top" src="/src/sample-portfolio.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary bg-orange">Go somewhere</a>
+                        <h5 class="card-title font-weight-bold">Online Examination App</h5>
+                        <p class="card-text">This application was to design for a classroom setting. Teacher provides
+                            questions which students answer synchronously.
+                        </p>
+                        <a href="#" class="btn btn-primary bg-orange">Learn more</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1500">
                     <img class="card-img-top" src="/src/sample-portfolio.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary bg-orange">Go somewhere</a>
+                        <h5 class="card-title font-weight-bold">Personal Website and Blog</h5>
+                        <p class="card-text">This custom them wordpress provides project portfolio and pesonal blog.</p>
+                        <a href="#" class="btn btn-primary bg-orange">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -201,43 +196,36 @@
     <div class="container">
         <hr>
     </div>
-    <section class="about">
+    <section class="about" id="theAbout">
         <div class="container">
-            <h1 class="text-orange font-weight-bold pb-3">About me</h1>
             <div class="row">
-                <div class="col-12 col-sm-8 text-left">
+                <div class="col-12 col-md-4">
+                    <h1 class="text-orange font-weight-bold pb-3 d-block d-sm-none">About Us</h1>
+                    <img src="/src/xcvd.jpg" id="myPhoto" alt="Photo" data-aos="fade-right" data-aos-duration="1500">
+                </div>
+                <div class="col-12 col-md-8 text-left mt-3" data-aos="fade-left" data-aos-duration="1500">
+                    <h1 class="text-orange font-weight-bold pb-3 d-sm-block d-none">About Us</h1>
                     <h2 class="font-weight-bold text-orange">Rennjay Encinares Soterio</h2>
                     <h3 class="text-secondary">Fullstack Web Developer</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit tempora consectetur vel veniam
-                        molestias, deleniti veritatis praesentium autem, est suscipit voluptatum impedit amet aperiam
-                        esse
-                        placeat nesciunt. Eligendi omnis repellat fugit tempore dolorum unde magni saepe iure fuga?
-                        Reiciendis, laboriosam?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus amet tempora! Dolorum,
-                        assumenda! Libero, nobis blanditiis dolor ut corporis facilis ab pariatur dolorum. Accusamus
-                        quaerat magnam at labore in?
+                        I am a software engineer with a passion for web developement. I am currently employed to an
+                        international Core Banking Solution company. I love building something that benefits other
+                        people.
+                        I love spending time on tweaking a little details and optimizing web applications. Also I like
+                        working in a team
+                        and absorb learnings out of synergy.
                     </p>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <img src="/src/sample-portfolio.jpg" alt="Photo" class="img-fluid rounded">
-                </div>
-                </row>
             </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="theContact">
         <div class="container-fluid px-5">
             <h1 class="text-orange">Let's talk?</h1>
             <div class="row">
                 <div class="col-md-6">
                     <div class="location d-flex justify-content-start align-items-center py-3">
                         <i class="fas fa-search-location fa-3x mr-3 text-orange"></i>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quo quae
-                            molestias
-                            accusantium,
-                            distinctio adipisci.</p>
+                        <p class="mb-0">Dominga St. Barangay 41, Pasay City, Metro Manila 1300, Philippines</p>
                     </div>
                     <div class="email d-flex justify-content-start align-items-center py-3">
                         <i class="fas fa-envelope-open-text fa-3x mr-3 text-orange"></i>
@@ -249,21 +237,24 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <form>
+                    <form method="POST" action="contact.php" name="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
+                                aria-describedby="emailHelp" placeholder="Enter email" name="email">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="3"
+                                placeholder="Enter message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary bg-orange btn-lg">Submit</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary bg-orange btn-lg px-5">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -280,6 +271,11 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

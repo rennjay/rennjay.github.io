@@ -36,8 +36,8 @@
   }
 
   .fullscreen-video-wrap video {
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100% !important;
+    min-height: 100% !important;
   }
 
   .header-overlay {
@@ -47,19 +47,26 @@
     top: 0;
     left: 0;
     background: #6A049F;
+    background-image: url("/src/3px-tile.png");
     z-index: 1;
     opacity: 0.5;
+
   }
 
   .header-content {
     z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   .nav-div {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
   }
 
@@ -131,4 +138,68 @@
   section.contact {
     background: #3c0652;
     color: white;
+  }
+
+  .nav-item {
+    font-weight: 500;
+    color: white !important;
+    width: 100px;
+  }
+
+  .nav-item .active {
+    color: #f2870e !important;
+    border-bottom: 5px solid #f2870e;
+    font-weight: 700;
+  }
+
+  .btn {
+    transition: 0.4s;
+    border: none;
+  }
+
+  .btn:hover {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+
+  #myPhoto {
+    /* border-radius: 50% !important; */
+    width: 300px;
+    height: 300px;
+    border: 4px solid gray;
+    border-radius: 10%;
+  }
+
+  .nav-item a,
+  a.navbar-brand {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width:992px) {
+    #mainNav {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .nav-link {
+      width: 100vw;
+      background: #250b35;
+    }
+
+    .navbar-brand {
+      margin-left: 16px;
+    }
+
+    .navbar-toggler {
+      margin-right: 16px;
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .portfolio-body .card {
+      width: 100% !important;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
   }
