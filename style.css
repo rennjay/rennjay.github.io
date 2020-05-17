@@ -26,6 +26,16 @@
     text-align: center;
   }
 
+  a {
+    color: #f2870e;
+  }
+
+  #exp-header {
+    background: #180722;
+    color: white;
+    font-weight: 100 !important;
+    font-stretch: expanded;
+  }
 
   .fullscreen-video-wrap {
     position: absolute;
@@ -86,8 +96,8 @@
 
 
   section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .whychooseus {
