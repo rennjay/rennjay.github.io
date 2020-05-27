@@ -1,2 +1,2 @@
 # rennjay.github.io
-My personaly website
+My personal website
