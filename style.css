@@ -228,6 +228,25 @@ a.navbar-brand {
   margin: 3px;
   font-weight: 500;
 }
+
+.btn-purple {
+  background: white;
+  color: #f2870e;
+}
+.btn-purple:hover {
+  color: #6a049f;
+}
+.proj-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#projCarousel .carousel-item {
+  height: 600px;
+}
+#projCarousel .carousel-item img {
+  width: 100%;
+}
 @media only screen and (max-width: 992px) {
   #mainNav {
     padding-left: 0;
